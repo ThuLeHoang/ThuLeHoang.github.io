@@ -2,129 +2,131 @@
 <html>
 
 <head>
-	<title>Đăng nhập | Sách Mềm</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css" />
-	<link rel="icon" href="https://i.imgur.com/KIXPKee.png">
+  <title>Đăng nhập | Sách Mềm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://i.imgur.com/KIXPKee.png">
 </head>
 
 <body>
-	<div class="container">
-		<div class="header">
-			<img class="logo" src="https://i.imgur.com/Wki24mR.png">
-			<!--logo sach mem-->
+  <div class="container">
+	<!--header-->
+    <div class="header">
+      <img class="logo" src="https://i.imgur.com/Wki24mR.png">
+      <!--logo sach mem-->
 
-			<!-- panel-->
-			<div class="panel-header">
-				<div class="text-center">
-					<span> Bạn chưa có tài khoản?</span>
-					<a href="#">Đăng ký </a> hoặc
+      <!-- panel-->
+      <div class="panel-header">
+        <div class="text-center">
+          <span> Bạn chưa có tài khoản?</span>
+          <a href="#">Đăng ký </a> hoặc
 
-					<div class="btn">
-						<!--drop button-->
-						<button class="btn success" onclick="dropFunction()">Dùng thử
-							<div id="triangle_down">&#x25BC</div>
-						</button>
+		  <!--drop button-->
+          <div class="btn">
+            <button class="btn success" onclick="dropFunction()">Dùng thử
+              <div id="triangle_down">&#x25BC</div>
+            </button>
 
-						<div id="id_dropdown" class="dropdown-content">
-							<div id="teacher"><a href="#">Giáo viên</a><br></div>
-							<div id="student"><a href="#">Học sinh</a></div>
-						</div>
-					</div>
+            <div id="id_dropdown" class="dropdown-content">
+              <div id="teacher"><a href="#">Giáo viên</a><br></div>
+              <div id="student"><a href="#">Học sinh</a></div>
+            </div>
+          </div><!--drop button-->
 
-					<!--drop button-->
-					<script>
-						function dropFunction() {
-							document.getElementById("id_dropdown").classList.toggle("show");
+          
+          <script>
+            function dropFunction() {
+              document.getElementById("id_dropdown").classList.toggle("show");
 
-						}
-					</script>
+            }
+          </script>
 
-					<div>
-						<a href="#"> Hướng dẫn nhập mã sử dụng sách </a>
-					</div>
-				</div>
-			</div>
-			<!-- panel-->
-		</div>
+          <div>
+            <a href="#"> Hướng dẫn nhập mã sử dụng sách </a>
+          </div>
+        </div> <!--text center-->
+      </div> <!-- panel-->
+      
+    </div> <!--header-->
 
-		<div class="title" style="font-size: 22px;">
-			Đăng nhập
-		</div>
+    <div class="title" style="font-size: 22px;">
+      Đăng nhập
+    </div>
 
-		<!-- khung đăng nhập -->
-		<div class="panel">
-			<form>
-				<div class="email-address">
-					<label for="email">Địa chỉ email:</label>
-					<input type="text" name="address" placeholder="Địa chỉ email" />
-				</div>
+    <!-- khung đăng nhập -->
+    <div class="panel">
+      <form>
+        <div class="email-address">
+          <label for="email">Địa chỉ email:</label>
+          <input type="text" name="address" placeholder="Địa chỉ email" />
+        </div>
 
-				<div class="password">
-					<label for="pass">Mật khẩu:</label>
-					<input type="password" name="password" placeholder="Mật khẩu" />
-				</div>
+        <div class="password">
+          <label for="pass">Mật khẩu:</label>
+          <input type="password" name="password" placeholder="Mật khẩu" />
+        </div>
 
-				<div class="checkbox">
-					<input type="checkbox" name="remember" value="on">
-					<label for="remember-me">Nhớ tài khoản</label>
-					<a href="#">Quên mật khẩu?</a>
-				</div>
+        <div class="checkbox">
+          <input type="checkbox" name="remember" value="on">
+          <label for="remember-me">Nhớ tài khoản</label>
+          <a href="#">Quên mật khẩu?</a>
+        </div>
 
-				<div class="submit">
-					<input type="submit" value="Đăng nhập">
-				</div>
+        <div class="submit">
+          <input type="submit" value="Đăng nhập">
+        </div>
 
-				<hr>
+        <hr>
 
-				<div class="replace">Hoặc đăng nhập bằng</div>
+        <div class="replace">Hoặc đăng nhập bằng</div>
 
-				<div class="frame frame-space frame-bottom">
-					<div class="box">
-						<a href="#" class="box-style box-block box-public" id="facebook">
-							<span class="fa fa-facebook"></span>Facebook
-						</a>
-					</div>
+        <div class="frame frame-space frame-bottom">
+          <div class="box">
+            <a href="#" class="box-style box-block box-public" id="facebook">
+              <span class="fa fa-facebook"></span>Facebook
+            </a>
+          </div>
 
-					<div class="box">
-						<a href="#" class="box-style box-block box-public" id="google">
-							<span class="fa fa-google"></span>Google
-						</a>
-					</div>
-				</div>
+          <div class="box">
+            <a href="#" class="box-style box-block box-public" id="google">
+              <span class="fa fa-google"></span>Google
+            </a>
+          </div>
+        </div>
 
-				<p>Khi bạn ấn vào nút đăng nhập bằng Facebook hoặc Google, bạn đã đồng ý với các
-					<a href="#" target="_blank">Điều khoản dịch vụ</a> và đã đọc các
-					<a href="#" target="_blank">Chính sách riêng tư</a> của chúng tôi.
-				</p>
-			</form>
-		</div>
-	</div>
-	<!--container-->
+        <p>Khi bạn ấn vào nút đăng nhập bằng Facebook hoặc Google, bạn đã đồng ý với các
+          <a href="#" target="_blank">Điều khoản dịch vụ</a> và đã đọc các
+          <a href="#" target="_blank">Chính sách riêng tư</a> của chúng tôi.
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--container-->
 
-	<footer>
-		<div class="fbar">
-			<div style=" float: left; line-height: 16px;">
-				<div style="display: flex;">
-					<div><img class="f-image" src="http://i.imgur.com/Z7f8V39.png"></div>
+  <footer>
+    <div class="fbar">
+      <div style=" float: left; line-height: 16px;">
+        <div style="display: flex;">
+          <div><img class="f-image" src="http://i.imgur.com/Z7f8V39.png"></div>
 
-					<div class="col">
-						Copyright © 2016 SACHMEM.VN.<br> Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội<br> 
-						Người đại diện: Ông Vũ Bá Khánh - Tổng Giám đốc<br> 
-						Địa chỉ: Tòa nhà VP HEID, ngõ 12 Láng Hạ, Thành Công, Ba Đình, Hà Nội<br> 
-						Điện thoại: (04) 3 512 3939 Email: info@heid.vn<br> 
-						Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội<br>
-					</div>
-				</div>
-			</div>
+          <div class="col">
+            Copyright © 2016 SACHMEM.VN.<br> Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội<br> 
+            Người đại diện: Ông Vũ Bá Khánh - Tổng Giám đốc<br> 
+            Địa chỉ: Tòa nhà VP HEID, ngõ 12 Láng Hạ, Thành Công, Ba Đình, Hà Nội<br> 
+            Điện thoại: (04) 3 512 3939 Email: info@heid.vn<br> 
+            Giấy CNĐKDN số: 0102222393 ngày cấp 20/09/2010, nơi cấp: Sở KHĐT TP.Hà Nội<br>
+          </div>
 
-			<div>
-				<a class="fid" href="#">Chính sách</a>
-				<a class="fid" href="#">Điều khoản</a>
-			</div>
-		</div>
-	</footer>
+        </div>
+      </div>
+
+      <div>
+        <a class="fid" href="#">Chính sách</a>
+        <a class="fid" href="#">Điều khoản</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
